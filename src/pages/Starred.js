@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import MainPageLayout from '../components/MainPageLayout';
 
 const Starred = () => (
    
-        <div>
+        <MainPageLayout>
             this is starred
-        </div>
+        </MainPageLayout>
     
 );
 
-export default Starred
+export default Starred;
