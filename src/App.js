@@ -1,6 +1,7 @@
 import React from "react";
 import {Switch, Route} from 'react-router-dom';
 import Home from './pages/Home';
+import Show from "./pages/Show";
 import Starred from './pages/Starred';
 
 // here we have used exact which is said to be true as it does't require the equals to [exact={true}] statement in react:
@@ -14,6 +15,10 @@ function App() {
 
       <Route exact path="/starred"> 
       <Starred /> 
+      </Route>
+
+      <Route exact path = "/show/:id">
+        <Show />
       </Route>
 
       <Route>
